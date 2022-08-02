@@ -7,7 +7,7 @@ const ServiceName = ({date}) => {
 
 
     useEffect(() => {
-        fetch('services.json')
+        fetch('http://localhost:5000/service')
         .then(res => res.json())
         .then(data => setServicesName(data))
     },[])

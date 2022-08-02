@@ -7,7 +7,7 @@ const Contact = () => {
     <section style={{ 
       background: `url(${bg})`,
       backgroundSize: 'cover'
-      }} className="mt-20">
+      }} className="mt-20 p-5">
       <div className="flex flex-col justify-center items-center">
         <div className="text-center my-8">
           <h3 className="text-secondary  text-2xl uppercase">Contact Us</h3>

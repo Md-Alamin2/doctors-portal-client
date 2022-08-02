@@ -4,7 +4,7 @@ import appointment from '../../assets/images/appointment.png'
 import PrimaryButton from '../Shared/PrimaryButton/PrimaryButton';
 const MakeAppointment = () => {
     return (
-        <section   className='flex justify-center items-center p-1 my-28' style={{background: `url(${appointment})`,backgroundSize: 'cover'}}>
+        <section   className='flex justify-center items-center p-1 my-28' style={{background: `url(${appointment})`,backgroundSize: 'cover',}}>
             <div className='flex-1 hidden lg:block'>
                 <img className='lg:mt-[-100px]' src={doctor} alt="" />
             </div>
