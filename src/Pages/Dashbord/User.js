@@ -3,7 +3,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const User = () => {
-    const [isLoading, setIsLoading ] = useState(null)
+    const [isLoading, setIsLoading ] = useState(false)
 const [users, setUsers] = useState([]);
 
 useEffect(() => {
@@ -30,17 +30,18 @@ return (
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Email</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
     
 {
-    users.map(user => <UserRow
+    users.map((user, index) => <UserRow
     key={user._id}
     user={user}
+    index={index}
     />)
 }      
     </tbody>
